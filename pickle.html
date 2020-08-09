@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script game</title>
+	<link rel="stylesheet" type="text/css" href="pickle.css">
+	<script type="text/javascript" src="pickle.js"></script>
+</head>
+<body>
+	<div id="gradient"></div>
+	<div id="page">
+		<div id="Message-Container">
+			<div id="message">
+				<h1>CongRATULATIONS ! </h1>
+				<p>You are done.</p>
+				<p id="moves"></p>
+				<input type="button" id="okBtn" onclick="toggleVisablity('Message-Container')" value="Cool!" name="">
+				
+			</div>
+			
+		</div>
+		<div id="menu">
+			<div class="custom-select">
+				<select id="diffSelect">
+					<option value="10 ">
+						Easy
+					</option>
+					<option value="15">
+						Medium
+					</option>
+					<option value="25">
+						Hard
+					</option>
+					<option value="35">
+						Extreme
+					</option>
+				</select>
+			</div>
+			<input type="button" id="startMazeBtn" onclick="makeMaze()" value="start">
+			
+		</div>
+		<div id="view">
+			<div id="mazeContainer">
+				<canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+				
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+
+</body>
+</html>
